@@ -10,9 +10,14 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            string name = args[0];
-            Console.WriteLine("DUPA KWAS " + name);
-            Console.ReadKey();
+            string name ="";
+            foreach (var item in args)
+            {
+                name = name + " " + item;
+            }
+
+            Console.WriteLine("DUPA KWAS " + name.ToString());
+            //Console.ReadKey();
         }
     }
 }
