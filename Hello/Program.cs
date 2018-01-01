@@ -10,7 +10,8 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("DUPA KWAS");
+            string name = args[0];
+            Console.WriteLine("DUPA KWAS " + name);
             Console.ReadKey();
         }
     }
